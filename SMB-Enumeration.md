@@ -37,5 +37,5 @@ smbclient -N //10.10.10.10/directory_share
 
 ### Download Files from a Directory Share
 ```shell
-# smb:> get filename.ext
+smb:> get filename.ext
 ```
