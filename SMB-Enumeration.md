@@ -7,7 +7,7 @@ Performn a basic scan of the target SMB server.
 ```shell
 crackmapexec smb 10.10.10.10
 ```
-- List available shares
+- List available Directory Shares
 ```shell
 crackmapexec smb 10.10.10.10 --shares
 ```
@@ -29,3 +29,13 @@ smbclient -N -L //10.10.10.10
 If you are able to discover directory shares with read permissions, next you should connect to the share and look at it's contents. 
 
 ---
+
+### Connecting to a Directory Share
+```shell
+smbclient -N //10.10.10.10/directory_share
+```
+
+### Download Files from a Directory Share
+```shell
+# smb:> get filename.ext
+```
