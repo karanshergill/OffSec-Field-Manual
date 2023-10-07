@@ -1,1 +1,1 @@
-# OffSec-Guide
+# OffSec Field Manual
