@@ -11,6 +11,7 @@ crackmapexec smb 10.10.10.10
 ```shell
 crackmapexec smb 10.10.10.10 --shares
 ```
+If no shares are discovered, try NULL Session Authentication.
 
 ---
 
@@ -24,3 +25,7 @@ OR
 ```shell
 smbclient -N -L //10.10.10.10
 ```
+
+If you are able to discover directory shares with read permissions, next you should connect to the share and look at it's contents. 
+
+---
